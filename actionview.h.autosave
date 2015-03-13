@@ -1,0 +1,33 @@
+#ifndef ACTIONSCENE_H
+#define ACTIONVIEW_H
+
+
+#include <QObject>
+#include <QPixmap>
+#include <QApplication>
+
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
+
+#include "myplayer.h"
+
+
+/**
+ * @class actionview
+ * @brief The actionview class inherits from QGraphics view and builds the scene
+ */
+class actionview
+{
+public:
+    actionscene();
+    ~actionscene();
+
+    QGraphicsScene* getScene(){return scene1;}
+
+private:
+    QGraphicsScene* scene1 = new QGraphicsScene;
+};
+
+#endif // ACTIONSCENE_H

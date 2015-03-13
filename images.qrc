@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>BR_bank.png</file>
+        <file>BR_bank.gif</file>
+        <file>badguy.png</file>
+        <file>heart.png</file>
+        <file>hostage.png</file>
+        <file>badguy.gif</file>
+        <file>player.gif</file>
+    </qresource>
+</RCC>

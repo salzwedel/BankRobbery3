@@ -1,0 +1,112 @@
+#include "actionview.h"
+
+actionview::actionview()
+{
+    //create a scene
+    QGraphicsScene* scene1 = new QGraphicsScene();
+
+    MyPlayer* player = new MyPlayer();
+    QGraphicsRectItem* police1 = new QGraphicsRectItem();
+    QGraphicsRectItem* ambulance = new QGraphicsRectItem();
+    QGraphicsRectItem* SWAT = new QGraphicsRectItem();
+    QGraphicsRectItem* fire = new QGraphicsRectItem();
+
+    QGraphicsPixmapItem* bank = new QGraphicsPixmapItem();
+
+
+    //*********** CHANGE APPEARANCES OF ITEMS HERE ********************
+
+    //set images
+    QPixmap * bank_img = new QPixmap(":/img/BR_bank.gif");
+
+    //set bottom level for vehicle alignment
+    int roadlevel=650;
+
+    //player geometry values
+    int
+            player_w = 25,
+            player_h = 60;
+    int
+            player_x = 500,
+            player_y = roadlevel+10-player_h;
+
+    //sizes of vehicles
+    int
+            police1_w = 100,
+            police1_h = 50,
+
+            ambulance_w = 110,
+            ambulance_h = 60,
+
+            SWAT_w = 130,
+            SWAT_h = 60,
+
+            fire_w=160,
+            fire_h=65;
+
+    //position of vehicles
+    int
+            police1_x = 600,
+            police1_y = roadlevel - police1_h,
+
+            ambulance_x = 200,
+            ambulance_y = roadlevel - ambulance_h,
+
+            SWAT_x = 950,
+            SWAT_y = roadlevel - SWAT_h,
+
+            fire_x = 400,
+            fire_y = roadlevel - fire_h;
+
+
+    //other object values
+    int
+            bank_x=0,
+            bank_y=0,
+            bank_h=720,
+            bank_w=1280;
+
+    //set  vehicle geometry
+    police1->setRect(0,0,police1_w,police1_h);
+    police1->setPos(police1_x,police1_y);
+    ambulance->setRect(0,0,ambulance_w,ambulance_h);
+    ambulance->setPos(ambulance_x,ambulance_y);
+    SWAT->setRect(0,0,SWAT_w,SWAT_h);
+    SWAT->setPos(SWAT_x,SWAT_y);
+    fire->setRect(0,0,fire_w,fire_h);
+    fire->setPos(fire_x,fire_y);
+
+    //set player geometry
+    player->setRect(0,0,player_w,player_h);
+    player->setPos(player_x,player_y);
+
+    //set other object geometry
+
+    bank->setPixmap(*bank_img);
+
+    //bank->show();
+
+    //add items to the scene
+    scene1->addItem(player);
+    scene1->addItem(police1);
+    scene1->addItem(ambulance);
+    scene1->addItem(SWAT);
+    scene1->addItem(fire);
+    scene1->addItem(bank);
+
+    //set focus to player
+    player->setFlag(QGraphicsItem::ItemIsFocusable);
+    player->setFocus();
+
+
+
+
+
+
+}
+
+actionview::~actionview()
+{
+
+}
+

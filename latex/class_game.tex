@@ -1,0 +1,242 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+The \hyperlink{class_game}{Game} class inherits from Q\+Graphics view and builds the scene.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_af3f86c072631ccffc1e3de01bdfd1b88}{}void \hyperlink{class_game_af3f86c072631ccffc1e3de01bdfd1b88}{spawn\+\_\+b} ()\label{class_game_af3f86c072631ccffc1e3de01bdfd1b88}
+
+\begin{DoxyCompactList}\small\item\em spawn\+\_\+b  a new badguy \end{DoxyCompactList}\item 
+\hypertarget{class_game_a46fe3c9b6eb40e67d292b71345a5583b}{}void \hyperlink{class_game_a46fe3c9b6eb40e67d292b71345a5583b}{spawn\+\_\+h} ()\label{class_game_a46fe3c9b6eb40e67d292b71345a5583b}
+
+\begin{DoxyCompactList}\small\item\em spawn\+\_\+h  a new hostage \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}{}\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game} ()\label{class_game_ad59df6562a58a614fda24622d3715b65}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game\+::\+Game} constructs the \hyperlink{class_game}{Game} scene. \end{DoxyCompactList}\item 
+int \hyperlink{class_game_a1723c85835165e0a3353b58350401cd9}{badguys\+\_\+remaining} ()
+\begin{DoxyCompactList}\small\item\em badguys\+\_\+remaining \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_game_a6771d472a6adaf1bcc58f997b96f2c16}{badguys\+\_\+onscreen} ()
+\begin{DoxyCompactList}\small\item\em badguys\+\_\+onscreen \end{DoxyCompactList}\item 
+int \hyperlink{class_game_a6314e99dd420bef0775f61c3d1c30bc7}{max\+\_\+badguys\+\_\+onscreen} ()
+\begin{DoxyCompactList}\small\item\em max\+\_\+badguys\+\_\+onscreen \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_a978ecd228e6274e192e545b8a49eff9b}{badguy\+\_\+zones} (int n)
+\begin{DoxyCompactList}\small\item\em badguy\+\_\+zones \end{DoxyCompactList}\item 
+int \hyperlink{class_game_a132981c00605a3a030510aac18e16636}{hostages\+\_\+remaining} ()
+\begin{DoxyCompactList}\small\item\em hostages\+\_\+remaining \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_game_a8eb0a78447492976f2af4d69e5f4430e}{hostages\+\_\+onscreen} ()
+\begin{DoxyCompactList}\small\item\em hostages\+\_\+onscreen \end{DoxyCompactList}\item 
+int \hyperlink{class_game_abceb2d7ac9209b6ff3a2e2b4d727f05d}{max\+\_\+hostages\+\_\+onscreen} ()
+\begin{DoxyCompactList}\small\item\em max\+\_\+hostages\+\_\+onscreen \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_a90b2ca46a8e37e5a64a9bdce3f4a3e4b}{hostage\+\_\+zones} (int n)
+\begin{DoxyCompactList}\small\item\em hostage\+\_\+zones \end{DoxyCompactList}\item 
+\hypertarget{class_game_a7406d3975dff0cba5c50115d0f050a45}{}void \hyperlink{class_game_a7406d3975dff0cba5c50115d0f050a45}{badguy\+\_\+killed} ()\label{class_game_a7406d3975dff0cba5c50115d0f050a45}
+
+\begin{DoxyCompactList}\small\item\em badguy\+\_\+killed decrements the number of badguys remaining \end{DoxyCompactList}\item 
+void \hyperlink{class_game_ab4807ffbf5ec48e829789fb3390518f1}{set\+\_\+badguys\+\_\+zones} (size\+\_\+t p, bool b)
+\begin{DoxyCompactList}\small\item\em set\+\_\+badguys\+\_\+zones \end{DoxyCompactList}\item 
+\hypertarget{class_game_a080d1ee7b8efcef5834ffec80e0bbdb1}{}void \hyperlink{class_game_a080d1ee7b8efcef5834ffec80e0bbdb1}{hostage\+\_\+killed} ()\label{class_game_a080d1ee7b8efcef5834ffec80e0bbdb1}
+
+\begin{DoxyCompactList}\small\item\em hostage\+\_\+killed sets flag true when a hostage is killed \end{DoxyCompactList}\item 
+void \hyperlink{class_game_ac574b8c3b5287af87d780447c8f34840}{set\+\_\+hostages\+\_\+zones} (size\+\_\+t p, bool b)
+\begin{DoxyCompactList}\small\item\em set\+\_\+hostages\+\_\+zones \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_acdf00696bb0d30a7d8472d4bf0cefc1a}{}Q\+Graphics\+Scene $\ast$ {\bfseries scene1}\label{class_game_acdf00696bb0d30a7d8472d4bf0cefc1a}
+
+\item 
+\hypertarget{class_game_a1af74ac68938189a26ea16add6edbfaf}{}\hyperlink{class_my_player}{My\+Player} $\ast$ {\bfseries player}\label{class_game_a1af74ac68938189a26ea16add6edbfaf}
+
+\item 
+\hypertarget{class_game_ab7a716f587fb6211cd045452b5c9fd02}{}Q\+Graphics\+Text\+Item $\ast$ {\bfseries score}\label{class_game_ab7a716f587fb6211cd045452b5c9fd02}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_game}{Game} class inherits from Q\+Graphics view and builds the scene. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_a978ecd228e6274e192e545b8a49eff9b}{}\index{Game@{Game}!badguy\+\_\+zones@{badguy\+\_\+zones}}
+\index{badguy\+\_\+zones@{badguy\+\_\+zones}!Game@{Game}}
+\subsubsection[{badguy\+\_\+zones}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::badguy\+\_\+zones (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a978ecd228e6274e192e545b8a49eff9b}
+
+
+badguy\+\_\+zones 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is which zone to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true if there is a badguy in the nth zone 
+\end{DoxyReturn}
+\hypertarget{class_game_a6771d472a6adaf1bcc58f997b96f2c16}{}\index{Game@{Game}!badguys\+\_\+onscreen@{badguys\+\_\+onscreen}}
+\index{badguys\+\_\+onscreen@{badguys\+\_\+onscreen}!Game@{Game}}
+\subsubsection[{badguys\+\_\+onscreen}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Game\+::badguys\+\_\+onscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a6771d472a6adaf1bcc58f997b96f2c16}
+
+
+badguys\+\_\+onscreen 
+
+\begin{DoxyReturn}{Returns}
+the number of badguys currently on the screen 
+\end{DoxyReturn}
+\hypertarget{class_game_a1723c85835165e0a3353b58350401cd9}{}\index{Game@{Game}!badguys\+\_\+remaining@{badguys\+\_\+remaining}}
+\index{badguys\+\_\+remaining@{badguys\+\_\+remaining}!Game@{Game}}
+\subsubsection[{badguys\+\_\+remaining}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::badguys\+\_\+remaining (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a1723c85835165e0a3353b58350401cd9}
+
+
+badguys\+\_\+remaining 
+
+\begin{DoxyReturn}{Returns}
+the number of badguys remaining 
+\end{DoxyReturn}
+\hypertarget{class_game_a90b2ca46a8e37e5a64a9bdce3f4a3e4b}{}\index{Game@{Game}!hostage\+\_\+zones@{hostage\+\_\+zones}}
+\index{hostage\+\_\+zones@{hostage\+\_\+zones}!Game@{Game}}
+\subsubsection[{hostage\+\_\+zones}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::hostage\+\_\+zones (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a90b2ca46a8e37e5a64a9bdce3f4a3e4b}
+
+
+hostage\+\_\+zones 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & checks the nth zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is a hostage in the nth zone 
+\end{DoxyReturn}
+\hypertarget{class_game_a8eb0a78447492976f2af4d69e5f4430e}{}\index{Game@{Game}!hostages\+\_\+onscreen@{hostages\+\_\+onscreen}}
+\index{hostages\+\_\+onscreen@{hostages\+\_\+onscreen}!Game@{Game}}
+\subsubsection[{hostages\+\_\+onscreen}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Game\+::hostages\+\_\+onscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a8eb0a78447492976f2af4d69e5f4430e}
+
+
+hostages\+\_\+onscreen 
+
+\begin{DoxyReturn}{Returns}
+number hostages shown on the screen 
+\end{DoxyReturn}
+\hypertarget{class_game_a132981c00605a3a030510aac18e16636}{}\index{Game@{Game}!hostages\+\_\+remaining@{hostages\+\_\+remaining}}
+\index{hostages\+\_\+remaining@{hostages\+\_\+remaining}!Game@{Game}}
+\subsubsection[{hostages\+\_\+remaining}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::hostages\+\_\+remaining (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a132981c00605a3a030510aac18e16636}
+
+
+hostages\+\_\+remaining 
+
+\begin{DoxyReturn}{Returns}
+number of hostages remaining 
+\end{DoxyReturn}
+\hypertarget{class_game_a6314e99dd420bef0775f61c3d1c30bc7}{}\index{Game@{Game}!max\+\_\+badguys\+\_\+onscreen@{max\+\_\+badguys\+\_\+onscreen}}
+\index{max\+\_\+badguys\+\_\+onscreen@{max\+\_\+badguys\+\_\+onscreen}!Game@{Game}}
+\subsubsection[{max\+\_\+badguys\+\_\+onscreen}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::max\+\_\+badguys\+\_\+onscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_a6314e99dd420bef0775f61c3d1c30bc7}
+
+
+max\+\_\+badguys\+\_\+onscreen 
+
+\begin{DoxyReturn}{Returns}
+the maximum of badguys to be shown 
+\end{DoxyReturn}
+\hypertarget{class_game_abceb2d7ac9209b6ff3a2e2b4d727f05d}{}\index{Game@{Game}!max\+\_\+hostages\+\_\+onscreen@{max\+\_\+hostages\+\_\+onscreen}}
+\index{max\+\_\+hostages\+\_\+onscreen@{max\+\_\+hostages\+\_\+onscreen}!Game@{Game}}
+\subsubsection[{max\+\_\+hostages\+\_\+onscreen}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::max\+\_\+hostages\+\_\+onscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_abceb2d7ac9209b6ff3a2e2b4d727f05d}
+
+
+max\+\_\+hostages\+\_\+onscreen 
+
+\begin{DoxyReturn}{Returns}
+max number of hostages shown on screen 
+\end{DoxyReturn}
+\hypertarget{class_game_ab4807ffbf5ec48e829789fb3390518f1}{}\index{Game@{Game}!set\+\_\+badguys\+\_\+zones@{set\+\_\+badguys\+\_\+zones}}
+\index{set\+\_\+badguys\+\_\+zones@{set\+\_\+badguys\+\_\+zones}!Game@{Game}}
+\subsubsection[{set\+\_\+badguys\+\_\+zones}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+badguys\+\_\+zones (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{p, }
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_ab4807ffbf5ec48e829789fb3390518f1}
+
+
+set\+\_\+badguys\+\_\+zones 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the pth zone \\
+\hline
+{\em b} & is true or false sets true or false when a a badguy is added to or removed from a zone \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_ac574b8c3b5287af87d780447c8f34840}{}\index{Game@{Game}!set\+\_\+hostages\+\_\+zones@{set\+\_\+hostages\+\_\+zones}}
+\index{set\+\_\+hostages\+\_\+zones@{set\+\_\+hostages\+\_\+zones}!Game@{Game}}
+\subsubsection[{set\+\_\+hostages\+\_\+zones}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+\_\+hostages\+\_\+zones (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{p, }
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_ac574b8c3b5287af87d780447c8f34840}
+
+
+set\+\_\+hostages\+\_\+zones 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is the pth zone \\
+\hline
+{\em b} & is true or false sets true or false when a a hostage is added to or removed from a zone \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}
